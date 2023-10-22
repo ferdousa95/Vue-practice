@@ -10,7 +10,7 @@
 import axios from 'axios';
 import SearchBar from './components/SearchBar.vue';
 import VideoList from './components/VideoList.vue';
-const API_KEY = 'AIzaSyA-8RVl6fwPGh95nq7_MjJPRKe4ZlICqi4';
+const API_KEY = 'AIzaSyC2WEP3DhCfdjKQr9u--cl1ixvnzZKfZm0';
 
 export default {
     name: 'App',
