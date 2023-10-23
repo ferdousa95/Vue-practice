@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <SearchBar v-on:termChange="onTermChange"></SearchBar>
         <VideoList v-bind:videos = "videos"> </VideoList>
     </div>
@@ -10,7 +10,7 @@
 import axios from 'axios';
 import SearchBar from './components/SearchBar.vue';
 import VideoList from './components/VideoList.vue';
-const API_KEY = 'AIzaSyDX9YX6QIrQg32mFPJQvgLM1l2Y7Bvi4Lw';
+const API_KEY = 'AIzaSyB1fx0CWdRGYMfjiw4Qy-vooNeSZ3PlRwk';
 
 export default {
     name: 'App',
@@ -39,3 +39,15 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    input {
+        width: 75%;
+    }
+
+    div {
+        text-align: center;
+        margin: 20px;
+    }
+
+</style>
