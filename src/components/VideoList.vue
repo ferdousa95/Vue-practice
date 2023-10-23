@@ -3,6 +3,7 @@
         <VideoListItem 
             v-for="video in videos" :key="video"
             v-bind:video="video"
+            v-on:videoSelect="onVideoSelect"
         > 
             
         </VideoListItem>
@@ -19,6 +20,11 @@ export default {
     },
     components: {
     VideoListItem,
+    },
+    methods: {
+        onVideoSelect(video) {
+            this.$emit("videoSelect", video);
+        }
     }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <li class="list-group-item">
+    <li class="list-group-item" v-on:click="onVideoSelect">
         <img class="mr-3" v-bind:src="thumbnailUrl" />
         <div class = "media-body">
             {{ videoTitle }}
@@ -19,6 +19,11 @@ export default {
         },
         videoTitle() {
             return this.video.snippet.title;
+        }
+    },
+    methods: {
+        onVideoSelect() {
+            this.$emit('videoSelect', this.video);
         }
     }
 }
